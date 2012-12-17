@@ -445,12 +445,15 @@ class MainForm( QMainWindow ):
         pass
 
     def keyPressEvent ( self, event ):
+        from HWShowManager import showManager
         if event.key()  == Qt.Key_T:
             screenPos = QPoint(200,200)
             postTouchEvent( self, screenPos )
         if (event.key()  == Qt.Key_Q) and ( event.modifiers() & Qt.Key_Alt ):
             self.close()
             sys.exit()
+        if (event.key()  == Qt.Key_I) and ( event.modifiers() & Qt.Key_Alt ):
+            showManager.importMissingShows()
         
     def selectPage( self, pageName = None ):
         scene = None

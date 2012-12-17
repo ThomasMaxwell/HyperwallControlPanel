@@ -26,6 +26,39 @@ class ParseState:
     title = 2
     description = 3
     
+class ImportMissingShowsThread( threading.Thread ):
+
+    def __init__( self, showMgr, startup_time=15.0 ):
+        threading.Thread.__init__( self )
+        self.isActive = True 
+        self.daemon = True
+        self.showMgr = showMgr
+        self.startup_time = startup_time
+        self.dlg = QtGui.QDialog()
+        self.dlg.setWindowTitle('Import Missing Shows')
+        layout = QtGui.QVBoxLayout()
+        layout.setSpacing(6)
+        layout.setMargin(6)
+        label = QtGui.QLabel(" Generating missing show snapshots. Could tie up hyperwall for a long time. Click 'stop' to terminate process. ")
+        closeButton = QtGui.QPushButton('Stop', dlg)
+        layout.addWidget(label)
+        layout.addWidget(closeButton)
+        self.dlg.connect(closeButton, QtCore.SIGNAL('clicked(bool)'), self.stop)
+        self.dlg.setLayout(layout)
+        self.dlg.exec_()
+        
+    def stop(self):
+        self.isActive = False
+        self.dlg.close()
+
+    def run(self):
+        idList = list( self.showMgr.showRecs.keys() )
+        while self.isActive and ( len( idList ) > 0 ):
+            showRec = self.showMgr.getShowRecord( idList.pop() )
+            if showRec and showRec.isActive() and not showRec.validPixmap:
+                self.showMgr.runShow( showRec )
+                time.sleep( startup_time )
+                self.showMgr.importShow()
 
 class ShowRecord(QObject):
     def __init__( self, show_id ):
@@ -162,8 +195,11 @@ class HWShowManager(QObject):
                 self.pages[ pageId ].removeShow( showId )
             del self.showRecs[ showId ]
             del item
-
             
+    def importMissingShows( self ):
+        importThread = ImportMissingShowsThread( self )       
+        importThread.run()
+           
     def runShow( self, showRec ):        
         cmd = [ "ssh", self.hwControlNode, '/usr/bin/hwshow "%s"' % ( showRec.getPath() ) ]
         print " --- Executing: ", ' '.join(cmd)
