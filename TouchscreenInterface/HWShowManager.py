@@ -34,18 +34,18 @@ class ImportMissingShowsThread( threading.Thread ):
         self.daemon = True
         self.showMgr = showMgr
         self.startup_time = startup_time
-        self.dlg = QtGui.QDialog()
+        self.dlg = QDialog()
         self.dlg.setWindowTitle('Import Missing Shows')
-        layout = QtGui.QVBoxLayout()
+        layout = QVBoxLayout()
         layout.setSpacing(6)
         layout.setMargin(6)
-        label = QtGui.QLabel(" Generating missing show snapshots. Could tie up hyperwall for a long time. Click 'stop' to terminate process. ")
-        closeButton = QtGui.QPushButton('Stop', dlg)
+        label = QLabel(" Generating missing show snapshots.\n Could tie up hyperwall for a long time.\n Click 'stop' to terminate process. ")
+        closeButton = QPushButton('Stop', self.dlg)
         layout.addWidget(label)
         layout.addWidget(closeButton)
-        self.dlg.connect(closeButton, QtCore.SIGNAL('clicked(bool)'), self.stop)
+        self.dlg.connect(closeButton, SIGNAL('clicked(bool)'), self.stop)
         self.dlg.setLayout(layout)
-        self.dlg.exec_()
+        self.dlg.show()
         
     def stop(self):
         self.isActive = False
@@ -53,11 +53,15 @@ class ImportMissingShowsThread( threading.Thread ):
 
     def run(self):
         idList = list( self.showMgr.showRecs.keys() )
+        print " -- Running ImportMissingShowsThread, ids: ", str( idList )
         while self.isActive and ( len( idList ) > 0 ):
-            showRec = self.showMgr.getShowRecord( idList.pop() )
+            showId = idList.pop()
+            showRec = self.showMgr.getShowRecord( showId )
+            print " -- Testing show ", showId
             if showRec and showRec.isActive() and not showRec.validPixmap:
+                print " -- --> Missing Pixmap- importing!"
                 self.showMgr.runShow( showRec )
-                time.sleep( startup_time )
+                time.sleep( self.startup_time )
                 self.showMgr.importShow()
 
 class ShowRecord(QObject):
@@ -198,7 +202,7 @@ class HWShowManager(QObject):
             
     def importMissingShows( self ):
         importThread = ImportMissingShowsThread( self )       
-        importThread.run()
+        importThread.start()
            
     def runShow( self, showRec ):        
         cmd = [ "ssh", self.hwControlNode, '/usr/bin/hwshow "%s"' % ( showRec.getPath() ) ]

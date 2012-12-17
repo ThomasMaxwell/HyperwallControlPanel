@@ -197,6 +197,7 @@ class MainForm( QMainWindow ):
         print " MainForm resizeEvent "
         
     def event ( self, event ):
+        from HWShowManager import showManager
         if event.type() == ControlEventType:
             if ( event.controlEventType == 'P' ):
                 print " --> Wireless Control Button Press, ID = ", str( event.buttonId )
@@ -218,8 +219,14 @@ class MainForm( QMainWindow ):
                 dx = event.jx  * joystick_sensitivity
                 dy = event.jy  * joystick_sensitivity
                 self.scroll( dx, dy )
+
+        elif (event.type() == QEvent.KeyPress):  
+            if (event.key()  == Qt.Key_I):
+                print " ----------------------------- Import Missing Shows ----------------------------- "
+                showManager.importMissingShows()
+                return True
                  
-        if isTouchEvent( event ):
+        elif isTouchEvent( event ):
             print "MainForm Touch Event, class = %s " % str( event.__class__ )
             event.accept()
             return True
@@ -445,15 +452,12 @@ class MainForm( QMainWindow ):
         pass
 
     def keyPressEvent ( self, event ):
-        from HWShowManager import showManager
         if event.key()  == Qt.Key_T:
             screenPos = QPoint(200,200)
             postTouchEvent( self, screenPos )
-        if (event.key()  == Qt.Key_Q) and ( event.modifiers() & Qt.Key_Alt ):
+        if (event.key()  == Qt.Key_Q) and ( event.modifiers() & Qt.ControlModifier ):
             self.close()
             sys.exit()
-        if (event.key()  == Qt.Key_I) and ( event.modifiers() & Qt.Key_Alt ):
-            showManager.importMissingShows()
         
     def selectPage( self, pageName = None ):
         scene = None

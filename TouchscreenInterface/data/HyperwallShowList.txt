@@ -151,9 +151,9 @@ bigimage-zeta-ophiuchi
 #!>/hw/data/download/putman/modis-cloud-optical-thickness/modis-cloud-optical-thickness.hwshow
 modis-cloud-optical-thickness
 
-#!@lro-bigmovie-over-moon;1
-#!>/hw/data/download/lro/lro-bigmovie-over-moon.hwshow
-lro-bigmovie-over-moon
+#!@bigimage-nasalogo;1
+#!>/hw/data/download/bigimage-nasalogo.hwshow
+bigimage-nasalogo
 
 #!@giss-model-e;1
 #!>/hw/data/download/a030015/giss-model-e.hwshow
@@ -298,10 +298,6 @@ snowstorm-2010-3x3-lowres
 #!@nature_run_5x3;1
 #!>/hw/data/download/a003887/nature_run_5x3.hwshow
 nature_run_5x3
-
-#!@geos5_nature_run-radiation;1
-#!>/hw/data/download/a030017/geos5_nature_run-radiation.hwshow
-geos5_nature_run-radiation
 
 #!@woc_AntarcticOzoneHole_movie;1
 #!>/hw/data/download/earth/woc/woc_AntarcticOzoneHole_movie.hwshow
@@ -452,14 +448,6 @@ sc09_caption
 #!>/hw/data/download/earth/agriculture/bigmovie-agriculture_part3_video.hwshow
 bigmovie-agriculture_part3_video
 
-#!@modis-fires-caption;1
-#!>/hw/data/download/a003868/modis-fires-caption.hwshow
-modis-fires-caption
-
-#!@SDOAIA193A-3x5-2;1
-#!>/hw/data/download/a003981/SDOAIA193A-3x5-2.hwshow
-SDOAIA193A-3x5-2
-
 #!@bigimage-solar-activity-2002-2010;1
 #!>/hw/data/download/solar/SolarActivity/bigimage-solar-activity-2002-2010.hwshow
 bigimage-solar-activity-2002-2010
@@ -475,10 +463,6 @@ airs-co
 #!@bigimage-npp-10;1
 #!>/hw/data/download/earth/npp-bluemarble/bigimage-npp-10.hwshow
 bigimage-npp-10
-
-#!@SDOAIA193A-3x5-1;1
-#!>/hw/data/download/a003981/SDOAIA193A-3x5-1.hwshow
-SDOAIA193A-3x5-1
 
 #!@bigmovie-Aircraft_Raw.mp4;1
 #!>/hw/data/download/movies/bigmovie-Aircraft_Raw.mp4.hwshow
@@ -620,9 +604,9 @@ SDOAIA193A-3x5-3
 #!>/hw/data/download/a030010/bigimage-aster-global-dem-1.hwshow
 bigimage-aster-global-dem-1
 
-#!@bigimage-aster-global-dem-2;1
-#!>/hw/data/download/a030010/bigimage-aster-global-dem-2.hwshow
-bigimage-aster-global-dem-2
+#!@SDOAIA193A-3x5-1;1
+#!>/hw/data/download/a003981/SDOAIA193A-3x5-1.hwshow
+SDOAIA193A-3x5-1
 
 #!@NASA-Viz;1
 #!>/hw/data/download/a003914/NASA-Viz.hwshow
@@ -878,9 +862,9 @@ flyover-5x3
 #!>/hw/data/download/smd/smd-calendar-2012/smd_2012_cal_apr_hinode_eclipse_image.hwshow
 smd_2012_cal_apr_hinode_eclipse_image
 
-#!@bigimage-nasalogo;1
-#!>/hw/data/download/bigimage-nasalogo.hwshow
-bigimage-nasalogo
+#!@lro-bigmovie-over-moon;1
+#!>/hw/data/download/lro/lro-bigmovie-over-moon.hwshow
+lro-bigmovie-over-moon
 
 #!@lro-bigmovie-moonview;1
 #!>/hw/data/download/lro/lro-bigmovie-moonview.hwshow
@@ -890,9 +874,9 @@ lro-bigmovie-moonview
 #!>/hw/data/download/earth/woc/woc_DevastationRecoveryMtStHelens_movie.hwshow
 woc_DevastationRecoveryMtStHelens_movie
 
-#!@bigmovie-decadal-missions;1
-#!>/hw/data/download/movies/bigmovie-decadal-missions.hwshow
-bigmovie-decadal-missions
+#!@modis-fires-caption;1
+#!>/hw/data/download/a003868/modis-fires-caption.hwshow
+modis-fires-caption
 
 #!@woc_YellowRiverDelta_movie;1
 #!>/hw/data/download/earth/woc/woc_YellowRiverDelta_movie.hwshow
@@ -971,9 +955,9 @@ pursuit_of_light-3x3
 #!>/hw/data/download/neo/neo-globe.hwshow
 neo-globe
 
-#!@sdo-tornadoes-1;1
-#!>/hw/data/download/a003919/sdo-tornadoes-1.hwshow
-sdo-tornadoes-1
+#!@bigmovie-decadal-missions;1
+#!>/hw/data/download/movies/bigmovie-decadal-missions.hwshow
+bigmovie-decadal-missions
 
 #!@sdo-tornadoes-2;1
 #!>/hw/data/download/a003919/sdo-tornadoes-2.hwshow
@@ -1322,9 +1306,9 @@ hdfires-3x3
 #!>/hw/data/download/a003831/updated_merra.hwshow
 updated_merra
 
-#!@moon-aristarchus;1
-#!>/hw/data/download/a003917/moon-aristarchus.hwshow
-moon-aristarchus
+#!@SDOAIA193A-3x5-2;1
+#!>/hw/data/download/a003981/SDOAIA193A-3x5-2.hwshow
+SDOAIA193A-3x5-2
 
 #!@bigimage-orion-sofia;1
 #!>/hw/data/download/astro/orion-sofia/bigimage-orion-sofia.hwshow
@@ -1335,9 +1319,9 @@ bigimage-orion-sofia
 a003551-lower
 ][
 
-#!@neo-aerod;1
-#!>/hw/data/download/a030012/neo-aerod.hwshow
-neo-aerod
+#!@bigimage-aster-global-dem-2;1
+#!>/hw/data/download/a030010/bigimage-aster-global-dem-2.hwshow
+bigimage-aster-global-dem-2
 
 #!@global-biosphere;1
 #!>/hw/data/download/a002914/global-biosphere.hwshow
@@ -1562,9 +1546,9 @@ lro-bigmovie-launch-orbit
 #!>/hw/data/download/a003841/SDOBigFilament1700A-upper.hwshow
 SDOBigFilament1700A-upper
 
-#!@e_agriculture_part3_video;1
-#!>/hw/data/download/earth/agriculture/e_agriculture_part3_video.hwshow
-e_agriculture_part3_video
+#!@geos5_nature_run-radiation;1
+#!>/hw/data/download/a030017/geos5_nature_run-radiation.hwshow
+geos5_nature_run-radiation
 
 #!@no2-isrse;1
 #!>/hw/data/download/omi-no2-2009-2010/no2-isrse.hwshow
@@ -1626,6 +1610,10 @@ SDOAIA094-3x5-1
 #!>/hw/data/download/movies/bigmovie-air_traffic_2048.mp4.hwshow
 bigmovie-air_traffic_2048.mp4
 
+#!@sdo-tornadoes-1;1
+#!>/hw/data/download/a003919/sdo-tornadoes-1.hwshow
+sdo-tornadoes-1
+
 #!@smd_2012_cal_dec_spicules_sdo_image;1
 #!>/hw/data/download/smd/smd-calendar-2012/smd_2012_cal_dec_spicules_sdo_image.hwshow
 smd_2012_cal_dec_spicules_sdo_image
@@ -1634,9 +1622,9 @@ smd_2012_cal_dec_spicules_sdo_image
 #!>/hw/data/download/noaa-tsunami/tsunami.hwshow
 tsunami
 
-#!@smd_2012_cal_nov_antarctic_ice_flow_image;1
-#!>/hw/data/download/smd/smd-calendar-2012/smd_2012_cal_nov_antarctic_ice_flow_image.hwshow
-smd_2012_cal_nov_antarctic_ice_flow_image
+#!@e_agriculture_part3_video;1
+#!>/hw/data/download/earth/agriculture/e_agriculture_part3_video.hwshow
+e_agriculture_part3_video
 
 #!@modis-ndvi-airs-co2;1
 #!>/hw/data/download/a003947/modis-ndvi-airs-co2.hwshow
@@ -1758,6 +1746,10 @@ bigmovie-jup03.mp4
 #!>/hw/data/download/solar/solar-movies/svs-solar-movies.hwshow
 svs-solar-movies
 
+#!@moon-aristarchus;1
+#!>/hw/data/download/a003917/moon-aristarchus.hwshow
+moon-aristarchus
+
 #!@geos5-goes-3x3;1
 #!>/hw/data/download/geos5-goes/geos5-goes-3x3.hwshow
 geos5-goes-3x3
@@ -1789,6 +1781,10 @@ snowstorm-2010-3x3-highres
 #!@BurnRecoveryYellowstone;1
 #!>/hw/data/download/earth/fire/BurnRecoveryYellowstone/BurnRecoveryYellowstone.hwshow
 BurnRecoveryYellowstone
+
+#!@smd_2012_cal_nov_antarctic_ice_flow_image;1
+#!>/hw/data/download/smd/smd-calendar-2012/smd_2012_cal_nov_antarctic_ice_flow_image.hwshow
+smd_2012_cal_nov_antarctic_ice_flow_image
 
 #!@sdo-hmisunspots-feb2011-upper;1
 #!>/hw/data/download/a003897/sdo-hmisunspots-feb2011-upper.hwshow
@@ -1991,6 +1987,10 @@ GEOS-5 Real-Time Forecasts-1
 The GEOS-5 Data Assimilation System runs every 6 hours 365 days per year and produces forecasts of a variety of atmospheric variables. GEOS-5 runs at 1/4-degree (28-km) resolution for these forecasts. The visualization wall pulls the latest data from these forecasts as it becomes available on the NCCS Data Portal. 
 
 The 15 variables depicted here are Sea Salt Extinction AOT, Sea Level Pressure, CO Column Burden, Organic Carbon Extinction AOT, Total Column Ozone, CO Column Burden, SO4 Extinction AOT, Total Aerosol Optical Thickness, CO Column Burden, Black Carbon Extinction AOT, Stratospheric CFC-12 Column, Total Cloud Area Fraction, Dust Extinction AOT, Tropospheric CFC-12 Column, and combined Geopotential Height and Wind Velocity.
+
+#!@neo-aerod;1
+#!>/hw/data/download/a030012/neo-aerod.hwshow
+neo-aerod
 
 #!@meteorology-2010-2;1
 #!>/hw/data/download/gmao/meteorology-2010-2.hwshow
