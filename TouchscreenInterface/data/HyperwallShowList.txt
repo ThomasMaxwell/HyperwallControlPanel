@@ -155,6 +155,10 @@ modis-cloud-optical-thickness
 #!>/hw/data/download/bigimage-nasalogo.hwshow
 bigimage-nasalogo
 
+#!@stars-2mass-3x3;1
+#!>/hw/data/download/a030020/stars-2mass-3x3.hwshow
+stars-2mass-3x3
+
 #!@giss-model-e;1
 #!>/hw/data/download/a030015/giss-model-e.hwshow
 giss-model-e
@@ -258,6 +262,10 @@ sdo-hmisunspots-feb2011-1
 #!@woc_MesopotamiaMarshes_movie;1
 #!>/hw/data/download/earth/woc/woc_MesopotamiaMarshes_movie.hwshow
 woc_MesopotamiaMarshes_movie
+
+#!@bigmovie-minimum_seaice_graph_1979_2012_1080p;1
+#!>/hw/data/download/a003991/bigmovie-minimum_seaice_graph_1979_2012_1080p.hwshow
+bigmovie-minimum_seaice_graph_1979_2012_1080p
 
 #!@bigmovie-sentinels;1
 #!>/hw/data/download/a003595/bigmovie-sentinels.hwshow
@@ -374,6 +382,10 @@ orbitalfleet-3x2
 #!@bigimage-e_human_las_vegas_grid;1
 #!>/hw/data/download/earth/human/las_vegas_landsat/bigimage-e_human_las_vegas_grid.hwshow
 bigimage-e_human_las_vegas_grid
+
+#!@e_agriculture_part3_video;1
+#!>/hw/data/download/earth/agriculture/e_agriculture_part3_video.hwshow
+e_agriculture_part3_video
 
 #!@bigimage-e_floods_mississippi_2011;1
 #!>/hw/data/download/earth/floods/bigimage-e_floods_mississippi_2011.hwshow
@@ -528,9 +540,17 @@ geos5-clouds-2010-snowstorm-checkerboard-comparison
 #!>/hw/data/download/a003892/fleet-nov2011.hwshow
 fleet-nov2011
 
-#!@nature_run;1
-#!>/hw/data/download/a003887/nature_run.hwshow
-nature_run
+#!@SDOHMImagnetogram-3x5-3;1
+#!>/hw/data/download/a003989/SDOHMImagnetogram-3x5-3.hwshow
+SDOHMImagnetogram-3x5-3
+
+#!@SDOHMImagnetogram-3x5-2;1
+#!>/hw/data/download/a003989/SDOHMImagnetogram-3x5-2.hwshow
+SDOHMImagnetogram-3x5-2
+
+#!@SDOHMImagnetogram-3x5-1;1
+#!>/hw/data/download/a003989/SDOHMImagnetogram-3x5-1.hwshow
+SDOHMImagnetogram-3x5-1
 
 #!@zzz_test_gray_lines;1
 #!>/hw/data/download/tests/zzz_test_gray_lines.hwshow
@@ -647,6 +667,10 @@ bigmovie-mar04.mp4
 #!@bigimage-e_dust_australia_lake_eyre;1
 #!>/hw/data/download/earth/dust/bigimage-e_dust_australia_lake_eyre.hwshow
 bigimage-e_dust_australia_lake_eyre
+
+#!@north;1
+#!>/hw/data/download/ozone/north.hwshow
+north
 
 #!@bigmovie-sat06.mp4;1
 #!>/hw/data/download/planets/saturn/bigmovie-sat06.mp4.hwshow
@@ -939,6 +963,10 @@ antarctica-ice-flows_caption
 #!>/hw/data/download/earth/agriculture/bigmovie-agriculture_part6_video.hwshow
 bigmovie-agriculture_part6_video
 
+#!@nature_run;1
+#!>/hw/data/download/a003887/nature_run.hwshow
+nature_run
+
 #!@bigimage-npp;1
 #!>/hw/data/download/earth/npp-bluemarble/bigimage-npp.hwshow
 bigimage-npp
@@ -959,9 +987,9 @@ neo-globe
 #!>/hw/data/download/movies/bigmovie-decadal-missions.hwshow
 bigmovie-decadal-missions
 
-#!@sdo-tornadoes-2;1
-#!>/hw/data/download/a003919/sdo-tornadoes-2.hwshow
-sdo-tornadoes-2
+#!@bigmovie-minimum_seaice_1979_2012_1080p;1
+#!>/hw/data/download/a003991/bigmovie-minimum_seaice_1979_2012_1080p.hwshow
+bigmovie-minimum_seaice_1979_2012_1080p
 
 #!@sdo-tornadoes-3;1
 #!>/hw/data/download/a003919/sdo-tornadoes-3.hwshow
@@ -1108,10 +1136,6 @@ bigimage-saturn-cassini
 #!>/hw/data/download/movies/bigmovie-cosmic_collisions.hwshow
 bigmovie-cosmic_collisions
 
-#!@geos5_nature_run-hurricanes-sep2005;1
-#!>/hw/data/download/a003887/geos5_nature_run-hurricanes-sep2005.hwshow
-geos5_nature_run-hurricanes-sep2005
-
 #!@bigimage-uranus-hubble;1
 #!>/hw/data/download/planets/uranus/bigimage-uranus-hubble.hwshow
 bigimage-uranus-hubble
@@ -1163,6 +1187,10 @@ bigmovie-cosmic_collisions_dual
 #!@gpm_fleet;1
 #!>/hw/data/download/a003891/gpm_fleet.hwshow
 gpm_fleet
+
+#!@landtrendr_agu35;1
+#!>/hw/data/download/a004013/landtrendr_agu35.hwshow
+landtrendr_agu35
 
 #!@sc09;1
 #!>/hw/data/download/a003722/sc09.hwshow
@@ -1397,6 +1425,10 @@ PineIsland_1080p30
 #!>/hw/data/download/tests/test_image_on_master.hwshow
 test_image_on_master
 
+#!@bigmovie-jup02.mp4;1
+#!>/hw/data/download/planets/jupiter/bigmovie-jup02.mp4.hwshow
+bigmovie-jup02.mp4
+
 #!@ecco2-pacific;1
 #!>/hw/data/download/a003912/ecco2-pacific.hwshow
 ecco2-pacific
@@ -1404,6 +1436,10 @@ ecco2-pacific
 #!@nature_run_sep2005;1
 #!>/hw/data/download/a003887/nature_run_sep2005.hwshow
 nature_run_sep2005
+
+#!@stars-2mass;1
+#!>/hw/data/download/a030020/stars-2mass.hwshow
+stars-2mass
 
 #!@woc_TheSeasonsofLakeTahoe_movie;1
 #!>/hw/data/download/earth/woc/woc_TheSeasonsofLakeTahoe_movie.hwshow
@@ -1512,6 +1548,18 @@ SDOTornados_Feb2012_171A-lower
 #!@bigmovie-nccs-models;1
 #!>/hw/data/download/a010563/bigmovie-nccs-models.hwshow
 bigmovie-nccs-models
+
+#!@SDOHMIDoppler-3x5-3;1
+#!>/hw/data/download/a003990/SDOHMIDoppler-3x5-3.hwshow
+SDOHMIDoppler-3x5-3
+
+#!@SDOHMIDoppler-3x5-2;1
+#!>/hw/data/download/a003990/SDOHMIDoppler-3x5-2.hwshow
+SDOHMIDoppler-3x5-2
+
+#!@SDOHMIDoppler-3x5-1;1
+#!>/hw/data/download/a003990/SDOHMIDoppler-3x5-1.hwshow
+SDOHMIDoppler-3x5-1
 
 #!@antarctica-flows;1
 #!>/hw/data/download/a003848/antarctica-flows.hwshow
@@ -1622,9 +1670,9 @@ smd_2012_cal_dec_spicules_sdo_image
 #!>/hw/data/download/noaa-tsunami/tsunami.hwshow
 tsunami
 
-#!@e_agriculture_part3_video;1
-#!>/hw/data/download/earth/agriculture/e_agriculture_part3_video.hwshow
-e_agriculture_part3_video
+#!@sdo-tornadoes-2;1
+#!>/hw/data/download/a003919/sdo-tornadoes-2.hwshow
+sdo-tornadoes-2
 
 #!@modis-ndvi-airs-co2;1
 #!>/hw/data/download/a003947/modis-ndvi-airs-co2.hwshow
@@ -1794,6 +1842,10 @@ sdo-hmisunspots-feb2011-upper
 #!>/hw/data/download/a003912/ecco2-global.hwshow
 ecco2-global
 
+#!@SDO-jewel-box-c4;1
+#!>/hw/data/download/a004008/SDO-jewel-box-c4.hwshow
+SDO-jewel-box-c4
+
 #!@bigmovie-decadal720p;1
 #!>/hw/data/download/a003818/bigmovie-decadal720p.hwshow
 bigmovie-decadal720p
@@ -1871,9 +1923,17 @@ sc09_caption-vertical
 #!>/hw/data/download/a030019/geos5-sandy_winds_10m.hwshow
 geos5-sandy_winds_10m
 
-#!@north;1
-#!>/hw/data/download/ozone/north.hwshow
-north
+#!@SDOHMIintensity-3x5-2;1
+#!>/hw/data/download/a003988/SDOHMIintensity-3x5-2.hwshow
+SDOHMIintensity-3x5-2
+
+#!@SDOHMIintensity-3x5-3;1
+#!>/hw/data/download/a003988/SDOHMIintensity-3x5-3.hwshow
+SDOHMIintensity-3x5-3
+
+#!@SDOHMIintensity-3x5-1;1
+#!>/hw/data/download/a003988/SDOHMIintensity-3x5-1.hwshow
+SDOHMIintensity-3x5-1
 
 #!@bigimage-volcano-puyehue-chile-2010;1
 #!>/hw/data/download/earth/volcano/bigimage-volcano-puyehue-chile-2010.hwshow
@@ -1967,9 +2027,9 @@ ecco2-atlantic-nasalogo
 #!>/hw/data/download/a003868/modis-fires-caption-vertical.hwshow
 modis-fires-caption-vertical
 
-#!@bigmovie-jup02.mp4;1
-#!>/hw/data/download/planets/jupiter/bigmovie-jup02.mp4.hwshow
-bigmovie-jup02.mp4
+#!@geos5_nature_run-hurricanes-sep2005;1
+#!>/hw/data/download/a003887/geos5_nature_run-hurricanes-sep2005.hwshow
+geos5_nature_run-hurricanes-sep2005
 
 #!@geos5-clouds-2010;1
 #!>/hw/data/download/a003723/geos5-clouds-2010.hwshow
@@ -2073,6 +2133,10 @@ ecco2-indian
 #!@ecco2-atlantic-3x3-nasalogo;1
 #!>/hw/data/download/a003912/ecco2-atlantic-3x3-nasalogo.hwshow
 ecco2-atlantic-3x3-nasalogo
+
+#!@stars-2mass-5x3;1
+#!>/hw/data/download/a030020/stars-2mass-5x3.hwshow
+stars-2mass-5x3
 
 #!@nasa-explores;1
 #!>/hw/data/download/a010992/nasa-explores.hwshow

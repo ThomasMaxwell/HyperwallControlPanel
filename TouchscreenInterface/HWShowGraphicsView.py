@@ -1099,6 +1099,9 @@ class ShowItem(QGraphicsItem):
     def runShow(self):
         showRec = self.showManager.getShowRecord( self.id )
         if not showRec:
+            msgBox = QMessageBox()
+            msgBox.setText( " RunShow: Can't find show: %s " % self.id)
+            msgBox.exec_()
             print>>sys.stderr, "RunShow: Can't find show: ", self.id
             return
         if not showRec.isActive():
