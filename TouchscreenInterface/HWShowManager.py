@@ -11,7 +11,7 @@ hw_root_dir = os.path.dirname(__file__)
 hw_config_data_path = os.path.join( hw_root_dir, 'data' )
 hw_show_data_path = os.path.join( hw_config_data_path, 'shows' )
 hw_exe_path = os.path.join( hw_root_dir, 'exe' )
-AllShowsFile = 'vislin01:/hw/data/download/allshows.txt'
+AllShowsFile = 'vislin01.nccs.nasa.gov:/hw/data/download/allshows.txt'
 LargeIconSize  = QSize(300,100)
 SmallIconSize  = QSize(120,40)
 
@@ -154,7 +154,7 @@ class HWShowManager(QObject):
         self.hwConfigFilePath  = os.path.join( hw_config_data_path, hwConfigFile )
         self.parseConfig()
         self.editingShow = None
-        self.hwControlNode = 'vislin01'
+        self.hwControlNode = 'vislin01.nccs.nasa.gov'
         self.processList = []
         self.importedShows = []
         
@@ -239,7 +239,7 @@ class HWShowManager(QObject):
             imageDir = os.path.expanduser(  '~/Pictures/ScreenCapture'  )
             imageFilePath = "/tmp/I.jpg"
             dims = ( 5, 3 )
-            nodeList = [ "visrend%02d" % iNode for iNode in range( 1, dims[0]*dims[1]+1 ) ]
+            nodeList = [ "visrend%02d.nccs.nasa.gov" % iNode for iNode in range( 1, dims[0]*dims[1]+1 ) ]
             params = { 'NodeList' : ','.join( nodeList ), 'Shrink': 10, 'ImageDir' : imageDir, 'HyperwallDimensions' : "%d,%d" % ( dims[0], dims[1] ) }
             paramFile = ParameterFile( params=params )
             screenCapture = HyperwallScreenCapture( paramFile )
@@ -419,10 +419,12 @@ class HWShowManager(QObject):
     def importShowLists( self, gridWidget ):
         try:
             showlist_script = '~/dev/exe/DumpPlayLists.sh'
-            cmd = [ 'ssh', 'vislin01', showlist_script  ]
+            cmd = [ 'ssh', 'vislin01.nccs.nasa.gov', showlist_script  ]
             print " --- Executing: ", ' '.join(cmd)
             p = subprocess.Popen( cmd, stdout=subprocess.PIPE, stderr=sys.stderr ) 
-            p.wait() 
+            for iW in range( 10 ):
+                if p.poll() <> None: break
+                time.sleep( 0.2 )
             return self.extractShowLists( p.stdout, gridWidget )
         except Exception, err:
             print>>sys.stderr, " Exception in importShowLists: %s " % str( err )
@@ -486,7 +488,7 @@ class HWShowManager(QObject):
         return len(self.showRecs) 
     
     def clearHyperwall(self):
-        cmd = [ "ssh", 'vislin01', 'bash -c "source ~/.bash_profile; export DISPLAY=:0.0; /usr/bin/hwall off; /usr/bin/hwdemo off; ~/dev/exe/hwcleanup" ' ]
+        cmd = [ "ssh", 'vislin01.nccs.nasa.gov', 'bash -c "source ~/.bash_profile; export DISPLAY=:0.0; /usr/bin/hwall off; /usr/bin/hwdemo off; ~/dev/exe/hwcleanup" ' ]
         p = subprocess.Popen( cmd, stdout=sys.stdout, stderr=sys.stderr ) 
     
     def updateShows(self): 

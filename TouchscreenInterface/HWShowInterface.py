@@ -198,29 +198,29 @@ class MainForm( QMainWindow ):
         
     def event ( self, event ):
         from HWShowManager import showManager
-        if event.type() == ControlEventType:
-            if ( event.controlEventType == 'P' ):
-                print " --> Wireless Control Button Press, ID = ", str( event.buttonId )
-                if ( event.buttonId[0] == 1 ):
-                    if ( event.buttonId[1] == 3 ):
-                        currentItem = self.showManager.selectNextShow( self.currentPageName, self.currentShowId )
-                        self.currentShowId = currentItem.id
-                        self.ensureVisible( currentItem )
-                        self.showManager.runShow( self.currentShowId )
-                    elif ( event.buttonId[1] == 0 ):
-                        self.showManager.runShow( self.currentShowId )
-                    else:
-                        currentItem = self.showManager.selectNextShow( self.currentPageName, self.currentShowId, event.buttonId[1]-4 )
-                        self.currentShowId = currentItem.id
-                        self.ensureVisible( currentItem )
-            if ( event.controlEventType.lower() == 'j' ):
-                joystick_sensitivity = 0.005
-#                print " **Form--> JS Toggle, Pos = ( %.2f %.2f )" % ( event.jx, event.jy ) 
-                dx = event.jx  * joystick_sensitivity
-                dy = event.jy  * joystick_sensitivity
-                self.scroll( dx, dy )
+#        if event.type() == ControlEventType:
+#            if ( event.controlEventType == 'P' ):
+#                print " --> Wireless Control Button Press, ID = ", str( event.buttonId )
+#                if ( event.buttonId[0] == 1 ):
+#                    if ( event.buttonId[1] == 3 ):
+#                        currentItem = self.showManager.selectNextShow( self.currentPageName, self.currentShowId )
+#                        self.currentShowId = currentItem.id
+#                        self.ensureVisible( currentItem )
+#                        self.showManager.runShow( self.currentShowId )
+#                    elif ( event.buttonId[1] == 0 ):
+#                        self.showManager.runShow( self.currentShowId )
+#                    else:
+#                        currentItem = self.showManager.selectNextShow( self.currentPageName, self.currentShowId, event.buttonId[1]-4 )
+#                        self.currentShowId = currentItem.id
+#                        self.ensureVisible( currentItem )
+#            if ( event.controlEventType.lower() == 'j' ):
+#                joystick_sensitivity = 0.005
+##                print " **Form--> JS Toggle, Pos = ( %.2f %.2f )" % ( event.jx, event.jy ) 
+#                dx = event.jx  * joystick_sensitivity
+#                dy = event.jy  * joystick_sensitivity
+#                self.scroll( dx, dy )
 
-        elif (event.type() == QEvent.KeyPress):  
+        if (event.type() == QEvent.KeyPress):  
             if (event.key()  == Qt.Key_I):
                 print " ----------------------------- Import Missing Shows ----------------------------- "
                 showManager.importMissingShows()
@@ -605,7 +605,7 @@ if __name__ == '__main__':
     fullScreen = False
     
     from TouchscreenClient import *  
-    from QtWirelessControllerInterface import *  
+#    from QtWirelessControllerInterface import *  
     from HWShowManager import showManager
     app = QApplication(sys.argv)
     showManager.updateShows()
@@ -615,9 +615,9 @@ if __name__ == '__main__':
     if fullScreen: form.showFullScreen()
     else: form.show()
     tc = TouchscreenManager( form, app ) if enableMultitouch else None
-    controllerInterface = QtControllerInterface( form ) if enableWirelessController else None
-    if controllerInterface: controllerInterface.start()
+#    controllerInterface = QtControllerInterface( form ) if enableWirelessController else None
+#    if controllerInterface: controllerInterface.start()
     app.exec_()
     if tc: tc.shutdown()
-    if controllerInterface: controllerInterface.stop()
+#    if controllerInterface: controllerInterface.stop()
     
