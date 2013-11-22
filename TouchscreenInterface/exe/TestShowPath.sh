@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ssh -Y vislin01 ls "$1"
+ssh -Y vislin01.nccs.nasa.gov ls "$1"
